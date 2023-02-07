@@ -5,8 +5,8 @@ import org.springframework.data.mongodb.core.mapping.Document;
 
 import java.util.List;
 
-@Document(value = "customer")
-public class Customer {
+@Document(value = "telekom")
+public class Telekom {
 
     @Id
     private String id;
@@ -15,10 +15,10 @@ public class Customer {
 
     private List<String> mobileNumbers;
 
-    public Customer() {
+    public Telekom() {
     }
 
-    public Customer(String dateTime, List<String> mobileNumbers) {
+    public Telekom(String dateTime, List<String> mobileNumbers) {
         this.dateTime = dateTime;
         this.mobileNumbers = mobileNumbers;
     }
